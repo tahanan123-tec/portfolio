@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Command Center | Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Boot Sequence Overlay -->
+    <div id="boot-sequence" class="boot-overlay">
+        <div class="boot-content">
+            <div class="boot-logo">◈ SECURE SYSTEM</div>
+            <div class="boot-text">
+                <p>> Initializing secure environment...</p>
+                <p>> Loading encryption modules...</p>
+                <p>> Establishing secure connection...</p>
+                <p>> Verifying credentials...</p>
+                <p class="access-granted">> ACCESS GRANTED</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="terminal-prompt">root@security:~$</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" data-cmd="./home">HOME</a>
+                <a href="#about" data-cmd="./profile">PROFILE</a>
+                <a href="#skills" data-cmd="./modules">MODULES</a>
+                <a href="#projects" data-cmd="./cases">CASES</a>
+                <a href="#contact" data-cmd="./contact">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scanning Line Effect -->
+    <div class="scan-line"></div>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        
+        <!-- Home Section -->
+        <section id="home" class="section home-section">
+            <div class="grid-background"></div>
+            <div class="scan-overlay"></div>
+            <div class="content-wrapper">
+                <div class="terminal-window hero-terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-title">secure_os_v4.2.1</span>
+                        <div class="terminal-controls">
+                            <span class="control-dot"></span>
+                            <span class="control-dot"></span>
+                            <span class="control-dot"></span>
+                        </div>
+                    </div>
+                    <div class="terminal-body">
+                        <div id="boot-lines" class="boot-lines">
+                            <!-- Boot sequence will be injected here -->
+                        </div>
+                        <div id="hero-content" class="hero-content" style="display: none;">
+                            <p class="terminal-line"><span class="prompt">user@learning:~$</span> whoami</p>
+                            <h1 class="hero-name glitch-reveal" data-text="MUSFIKUR RAHAMAN TAHANAN">MUSFIKUR RAHAMAN TAHANAN</h1>
+                            <p class="terminal-line"><span class="prompt">user@learning:~$</span> cat /etc/role</p>
+                            <p class="hero-role">Cybersecurity Enthusiast | Aspiring Security Professional</p>
+                            <p class="terminal-line"><span class="prompt">user@learning:~$</span> cat status.txt</p>
+                            <p class="status-text">
+                                ● learning.service - Continuous Learning Mode<br>
+                                &nbsp;&nbsp;&nbsp;Status: <span class="status-active">actively learning</span><br>
+                                &nbsp;&nbsp;&nbsp;Focus: Building cybersecurity skills<br>
+                                &nbsp;&nbsp;&nbsp;Goal: Becoming a security professional
+                            </p>
+                            <div class="hero-actions">
+                                <a href="#projects" class="terminal-btn">
+                                    <span class="prompt">$</span> ./view_projects.sh
+                                </a>
+                                <a href="#contact" class="terminal-btn">
+                                    <span class="prompt">$</span> ./connect.sh
+                                </a>
+                            </div>
+                            <div class="cursor-blink">_</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="content-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">◈</span>
+                        ABOUT ME
+                        <span class="encrypted-badge">LEARNING</span>
+                    </h2>
+                </div>
+                
+                <div class="profile-container">
+                    <div class="profile-card encrypted-card">
+                        <div class="card-header">
+                            <span class="file-path">/home/user/profile.txt</span>
+                            <span class="decrypt-status">STATUS: PUBLIC</span>
+                        </div>
+                        <div class="card-content">
+                            <div class="profile-data">
+                                <div class="data-row">
+                                    <span class="data-label">CURRENT STATUS:</span>
+                                    <span class="data-value decrypt-text">Cybersecurity Enthusiast</span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="data-label">LEARNING FOCUS:</span>
+                                    <span class="data-value decrypt-text">Ethical Hacking & Security Fundamentals</span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="data-label">INTERESTS:</span>
+                                    <span class="data-value decrypt-text">Penetration Testing, Web Security, CTF Challenges</span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="data-label">GOAL:</span>
+                                    <span class="data-value decrypt-text">Become a Professional Security Engineer</span>
+                                </div>
+                            </div>
+                            <div class="profile-bio">
+                                <p class="decrypt-text">
+                                    Passionate about cybersecurity and actively building my skills through 
+                                    hands-on practice, online courses, and personal projects. Currently learning 
+                                    penetration testing methodologies, network security, and secure coding practices. 
+                                    Eager to contribute to the security community and grow into a professional role.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="content-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">◈</span>
+                        LEARNING PROGRESS
+                    </h2>
+                </div>
+
+                <div class="modules-grid">
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="module-icon">⬢</span>
+                            <h3>Web Security Basics</h3>
+                        </div>
+                        <div class="module-bar">
+                            <div class="bar-fill" data-level="65"></div>
+                            <span class="bar-label">65%</span>
+                        </div>
+                        <div class="module-tags">
+                            <span class="tag">OWASP Top 10</span>
+                            <span class="tag">XSS</span>
+                            <span class="tag">SQLi</span>
+                        </div>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="module-icon">⬢</span>
+                            <h3>Network Fundamentals</h3>
+                        </div>
+                        <div class="module-bar">
+                            <div class="bar-fill" data-level="55"></div>
+                            <span class="bar-label">55%</span>
+                        </div>
+                        <div class="module-tags">
+                            <span class="tag">TCP/IP</span>
+                            <span class="tag">Wireshark</span>
+                            <span class="tag">Nmap</span>
+                        </div>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="module-icon">⬢</span>
+                            <h3>Linux & Command Line</h3>
+                        </div>
+                        <div class="module-bar">
+                            <div class="bar-fill" data-level="70"></div>
+                            <span class="bar-label">70%</span>
+                        </div>
+                        <div class="module-tags">
+                            <span class="tag">Bash</span>
+                            <span class="tag">Kali Linux</span>
+                            <span class="tag">Scripting</span>
+                        </div>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="module-icon">⬢</span>
+                            <h3>CTF Challenges</h3>
+                        </div>
+                        <div class="module-bar">
+                            <div class="bar-fill" data-level="50"></div>
+                            <span class="bar-label">50%</span>
+                        </div>
+                        <div class="module-tags">
+                            <span class="tag">HackTheBox</span>
+                            <span class="tag">TryHackMe</span>
+                            <span class="tag">PicoCTF</span>
+                        </div>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="module-icon">⬢</span>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="module-bar">
+                            <div class="bar-fill" data-level="60"></div>
+                            <span class="bar-label">60%</span>
+                        </div>
+                        <div class="module-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="module-card">
+                        <div class="module-header">
+                            <span class="module-icon">⬢</span>
+                            <h3>Security Tools</h3>
+                        </div>
+                        <div class="module-bar">
+                            <div class="bar-fill" data-level="45"></div>
+                            <span class="bar-label">45%</span>
+                        </div>
+                        <div class="module-tags">
+                            <span class="tag">Burp Suite</span>
+                            <span class="tag">Metasploit</span>
+                            <span class="tag">Nessus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network Visualization -->
+                <div class="network-graph-container">
+                    <div class="graph-header">
+                        <h3 class="graph-title">
+                            <span class="graph-icon">⬡</span>
+                            SKILL NETWORK TOPOLOGY
+                            <span class="live-indicator">● LIVE</span>
+                        </h3>
+                        <p class="graph-subtitle">Interactive Capability Map | Hover nodes for details</p>
+                    </div>
+                    <div class="network-viz">
+                        <canvas id="networkCanvas"></canvas>
+                        <div id="skillTooltip" class="skill-tooltip"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="content-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">◈</span>
+                        LEARNING PROJECTS
+                    </h2>
+                </div>
+
+                <div class="soc-dashboard">
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">45</div>
+                            <div class="stat-label">CTF Challenges</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">6</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Active Learning</div>
+                        </div>
+                    </div>
+
+                    <div class="cases-grid">
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">PROJECT-001</div>
+                                <div class="severity-badge medium">LEARNING</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator resolved"></span>
+                                <span class="status-label">COMPLETED</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Personal Portfolio Website</h3>
+                            <p class="case-description encrypted-content">
+                                Built a cybersecurity-themed portfolio website using HTML, CSS, and JavaScript. 
+                                Implemented terminal-style UI, interactive animations, and responsive design. 
+                                Learned about web development fundamentals and user experience design.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">COMPLETED:</span> 2026-04-20
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">DURATION:</span> 1 week
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">TECH:</span> HTML/CSS/JS
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Web Development</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Portfolio</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">PROJECT-002</div>
+                                <div class="severity-badge medium">LEARNING</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator ongoing"></span>
+                                <span class="status-label">IN PROGRESS</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">TryHackMe Learning Path</h3>
+                            <p class="case-description encrypted-content">
+                                Working through TryHackMe's Complete Beginner and Pre-Security paths. 
+                                Learning about Linux fundamentals, networking basics, web security, 
+                                and basic penetration testing techniques through hands-on labs.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">STARTED:</span> 2026-03-01
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">PROGRESS:</span> 65%
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">ROOMS:</span> 28 completed
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">TryHackMe</span>
+                                <span class="tag">CTF</span>
+                                <span class="tag">Hands-on Learning</span>
+                                <span class="tag">Linux</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">PROJECT-003</div>
+                                <div class="severity-badge medium">LEARNING</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator resolved"></span>
+                                <span class="status-label">COMPLETED</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Python Security Scripts</h3>
+                            <p class="case-description encrypted-content">
+                                Created basic security automation scripts in Python including a port scanner, 
+                                password strength checker, and simple encryption tool. Learning Python 
+                                programming fundamentals and their application in security tasks.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">COMPLETED:</span> 2026-02-15
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">DURATION:</span> 2 weeks
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">SCRIPTS:</span> 5 tools
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Automation</span>
+                                <span class="tag">Scripting</span>
+                                <span class="tag">Security Tools</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">PROJECT-004</div>
+                                <div class="severity-badge medium">LEARNING</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator ongoing"></span>
+                                <span class="status-label">IN PROGRESS</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">OWASP Top 10 Study</h3>
+                            <p class="case-description encrypted-content">
+                                Studying the OWASP Top 10 web application security risks through online 
+                                courses and practice labs. Setting up vulnerable web applications locally 
+                                to understand common vulnerabilities like XSS, SQLi, and CSRF.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">STARTED:</span> 2026-04-01
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">PROGRESS:</span> 40%
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">TOPICS:</span> 4/10
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">OWASP</span>
+                                <span class="tag">Web Security</span>
+                                <span class="tag">Vulnerabilities</span>
+                                <span class="tag">Practice Labs</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">PROJECT-005</div>
+                                <div class="severity-badge medium">LEARNING</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator resolved"></span>
+                                <span class="status-label">COMPLETED</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Home Lab Setup</h3>
+                            <p class="case-description encrypted-content">
+                                Built a virtual home lab using VirtualBox with Kali Linux, Windows, and 
+                                vulnerable machines. Configured network segmentation and practiced basic 
+                                penetration testing techniques in a safe, isolated environment.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">COMPLETED:</span> 2026-01-20
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">DURATION:</span> 1 week
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">VMs:</span> 4 machines
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Home Lab</span>
+                                <span class="tag">Virtualization</span>
+                                <span class="tag">Kali Linux</span>
+                                <span class="tag">Practice Environment</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">PROJECT-006</div>
+                                <div class="severity-badge medium">LEARNING</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator ongoing"></span>
+                                <span class="status-label">IN PROGRESS</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Networking Fundamentals Course</h3>
+                            <p class="case-description encrypted-content">
+                                Learning TCP/IP, OSI model, common protocols, and network security basics. 
+                                Practicing with Wireshark for packet analysis and understanding how data 
+                                flows across networks. Essential foundation for security work.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">STARTED:</span> 2026-03-15
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">PROGRESS:</span> 55%
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">MODULES:</span> 8/15
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Networking</span>
+                                <span class="tag">TCP/IP</span>
+                                <span class="tag">Wireshark</span>
+                                <span class="tag">Protocols</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="soc-dashboard">
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <div class="stat-value">47</div>
+                            <div class="stat-label">Total Cases</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">12</div>
+                            <div class="stat-label">Critical Resolved</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">98%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">3</div>
+                            <div class="stat-label">Active Cases</div>
+                        </div>
+                    </div>
+
+                    <div class="cases-grid">
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">SEC-2026-004</div>
+                                <div class="severity-badge critical">CRITICAL</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator resolved"></span>
+                                <span class="status-label">RESOLVED</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Enterprise Network Penetration Test</h3>
+                            <p class="case-description encrypted-content">
+                                Comprehensive security assessment of Fortune 500 company infrastructure. 
+                                Identified 23 critical vulnerabilities including privilege escalation paths 
+                                and lateral movement opportunities across domain controllers.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">COMPLETED:</span> 2026-03-15
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">DURATION:</span> 3 weeks
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">VULNS:</span> 23 found
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Penetration Testing</span>
+                                <span class="tag">Network Security</span>
+                                <span class="tag">Active Directory</span>
+                                <span class="tag">Privilege Escalation</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">SEC-2026-003</div>
+                                <div class="severity-badge high">HIGH</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator patched"></span>
+                                <span class="status-label">PATCHED</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Web Application Security Audit</h3>
+                            <p class="case-description encrypted-content">
+                                Full-stack security review of SaaS platform serving 100K+ users. 
+                                Discovered SQL injection, XSS vulnerabilities, authentication bypass, 
+                                and insecure direct object references. All issues remediated.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">COMPLETED:</span> 2026-02-08
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">DURATION:</span> 2 weeks
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">VULNS:</span> 15 found
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Web Security</span>
+                                <span class="tag">OWASP Top 10</span>
+                                <span class="tag">API Security</span>
+                                <span class="tag">Authentication</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">SEC-2026-002</div>
+                                <div class="severity-badge critical">CRITICAL</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator ongoing"></span>
+                                <span class="status-label">ONGOING</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Advanced Persistent Threat Analysis</h3>
+                            <p class="case-description encrypted-content">
+                                Investigation of sophisticated APT campaign targeting financial sector. 
+                                Analyzing custom malware, C2 infrastructure, and attack vectors. 
+                                Developing detection signatures and mitigation strategies.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">STARTED:</span> 2026-04-01
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">DURATION:</span> In Progress
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">THREAT:</span> APT-28
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Threat Intelligence</span>
+                                <span class="tag">Malware Analysis</span>
+                                <span class="tag">Incident Response</span>
+                                <span class="tag">OSINT</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">SEC-2025-018</div>
+                                <div class="severity-badge high">HIGH</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator resolved"></span>
+                                <span class="status-label">RESOLVED</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Cloud Infrastructure Security Assessment</h3>
+                            <p class="case-description encrypted-content">
+                                Comprehensive audit of AWS cloud environment. Identified misconfigurations, 
+                                exposed S3 buckets, overly permissive IAM policies, and unencrypted data stores. 
+                                Implemented zero-trust architecture recommendations.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">COMPLETED:</span> 2025-12-10
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">DURATION:</span> 4 weeks
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">VULNS:</span> 31 found
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Cloud Security</span>
+                                <span class="tag">AWS</span>
+                                <span class="tag">IAM</span>
+                                <span class="tag">Zero Trust</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">SEC-2025-015</div>
+                                <div class="severity-badge medium">MEDIUM</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator resolved"></span>
+                                <span class="status-label">RESOLVED</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Custom Security Tool Development</h3>
+                            <p class="case-description encrypted-content">
+                                Developed automated vulnerability scanner for IoT devices. Tool performs 
+                                network discovery, service enumeration, and exploits common IoT vulnerabilities. 
+                                Open-sourced on GitHub with 2.5K+ stars.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">RELEASED:</span> 2025-11-22
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">DURATION:</span> 6 weeks
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">LANG:</span> Python
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Tool Development</span>
+                                <span class="tag">IoT Security</span>
+                                <span class="tag">Automation</span>
+                                <span class="tag">Open Source</span>
+                            </div>
+                        </div>
+
+                        <div class="case-file" data-encrypted="true">
+                            <div class="case-scan-line"></div>
+                            <div class="case-header">
+                                <div class="case-id">SEC-2025-012</div>
+                                <div class="severity-badge critical">CRITICAL</div>
+                            </div>
+                            <div class="case-status-bar">
+                                <span class="status-indicator resolved"></span>
+                                <span class="status-label">RESOLVED</span>
+                            </div>
+                            <h3 class="case-title encrypted-title">Zero-Day Vulnerability Research</h3>
+                            <p class="case-description encrypted-content">
+                                Discovered and responsibly disclosed critical RCE vulnerability in popular 
+                                enterprise software. Worked with vendor on patch development. CVE assigned 
+                                with CVSS score of 9.8. Received bug bounty of $25,000.
+                            </p>
+                            <div class="case-meta">
+                                <span class="meta-item">
+                                    <span class="meta-icon">📅</span>
+                                    <span class="meta-label">DISCLOSED:</span> 2025-10-05
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">⏱</span>
+                                    <span class="meta-label">DURATION:</span> 8 weeks
+                                </span>
+                                <span class="meta-item">
+                                    <span class="meta-icon">🎯</span>
+                                    <span class="meta-label">CVSS:</span> 9.8
+                                </span>
+                            </div>
+                            <div class="case-tags">
+                                <span class="tag">Vulnerability Research</span>
+                                <span class="tag">Zero-Day</span>
+                                <span class="tag">RCE</span>
+                                <span class="tag">Bug Bounty</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="content-wrapper">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon">◈</span>
+                        SECURE COMMUNICATION TERMINAL
+                    </h2>
+                    <p class="section-subtitle">Encrypted Channel | End-to-End Security</p>
+                </div>
+
+                <div class="terminal-contact">
+                    <div class="terminal-window secure-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-title">secure_comms_v2.4.1 | AES-256 Encrypted</span>
+                            <div class="terminal-status">
+                                <span class="encryption-badge">🔒 ENCRYPTED</span>
+                                <div class="terminal-controls">
+                                    <span class="control-dot"></span>
+                                    <span class="control-dot"></span>
+                                    <span class="control-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="terminal-body" id="terminalBody">
+                            <div id="terminalOutput" class="terminal-output">
+                                <p class="output-line system-msg">╔═══════════════════════════════════════════════════════════╗</p>
+                                <p class="output-line system-msg">║  SECURE COMMUNICATION TERMINAL v2.4.1                    ║</p>
+                                <p class="output-line system-msg">║  Encryption: AES-256-GCM | Authentication: RSA-4096      ║</p>
+                                <p class="output-line system-msg">╚═══════════════════════════════════════════════════════════╝</p>
+                                <p class="output-line">&nbsp;</p>
+                                <p class="output-line success-msg">> Connection established. Secure channel active.</p>
+                                <p class="output-line info-msg">> Type 'help' for available commands.</p>
+                                <p class="output-line">&nbsp;</p>
+                            </div>
+                            <div class="terminal-input-line">
+                                <span class="prompt">root@secure-comms:~$</span>
+                                <input type="text" id="terminalInput" class="terminal-cmd-input" autocomplete="off" autofocus>
+                                <span class="input-cursor">_</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Command Help Panel -->
+                    <div class="command-help-panel">
+                        <div class="help-header">
+                            <span class="help-icon">📋</span>
+                            <h3>Available Commands</h3>
+                        </div>
+                        <div class="help-commands">
+                            <div class="help-cmd">
+                                <code>help</code>
+                                <span>Display available commands</span>
+                            </div>
+                            <div class="help-cmd">
+                                <code>connect [email]</code>
+                                <span>Initiate secure connection</span>
+                            </div>
+                            <div class="help-cmd">
+                                <code>send [message]</code>
+                                <span>Send encrypted message</span>
+                            </div>
+                            <div class="help-cmd">
+                                <code>collab</code>
+                                <span>Request collaboration</span>
+                            </div>
+                            <div class="help-cmd">
+                                <code>info</code>
+                                <span>Display contact information</span>
+                            </div>
+                            <div class="help-cmd">
+                                <code>status</code>
+                                <span>Check connection status</span>
+                            </div>
+                            <div class="help-cmd">
+                                <code>clear</code>
+                                <span>Clear terminal output</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Cybersecurity Specialist | All communications encrypted</p>
+            <p class="footer-hash">SHA-256: a3f5c9e2b8d4f1a7c6e9b2d5f8a1c4e7</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
